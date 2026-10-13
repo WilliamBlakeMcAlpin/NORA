@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nora-page" content="1600x1000">
+<meta name="nora-output" content="D4">
+<title>NORA Color System</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .sw { display:grid; grid-template-columns: 2.2fr 1.4fr 1fr 1fr 1fr 0.8fr; gap: 0; height: 520px; outline:1px solid var(--nora-rule); }
+  .sw > div { position:relative; padding: 24px; display:flex; flex-direction:column; justify-content:flex-end; }
+  .sw .n { font-size: 26px; margin-bottom: 14px; }
+  .sw dl { display:grid; grid-template-columns: 70px 1fr; row-gap: 5px; font: 400 11px/1.45 var(--font-functional); letter-spacing:.06em; }
+  .sw dt { text-transform:uppercase; letter-spacing:.18em; opacity:.7; }
+  .ratio { display:flex; height: 18px; margin-top: 40px; outline:1px solid var(--nora-rule); }
+  .vi { display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .vi .chip { height: 210px; position:relative; }
+  .vi .pair { display:grid; grid-template-columns: 1fr 1fr; height: 120px; }
+  .vi .pair > div { display:flex; align-items:center; justify-content:center; font-size: 30px; font-weight:300; }
+  .warn { border-left: 1px solid var(--nora-violet); padding: 4px 0 4px 24px; max-width: 1180px; }
+  .ct td { font-size: 15px; padding: 10px 12px 10px 0; vertical-align: middle; }
+  .ct .s { width: 210px; padding: 9px 14px; font-size: 17px; }
+  .ct .v { font: 400 10px/1.4 var(--font-functional); letter-spacing:.14em; text-transform:uppercase; }
+  .leo { display:grid; grid-template-columns: 560px 1fr; gap: 72px; }
+</style>
+<script src="../tokens/tokens.js"></script>
+<script src="../assets/patterns/leopard.js"></script>
+</head>
+<body>
+
+<!-- 01 Palette -->
+<section class="page">
+  <div class="head"><div><div class="label">Color</div><h2>Mostly black. Some white. Almost no color.</h2></div></div>
+  <div class="sw" id="sw"></div>
+  <div class="label" style="margin-top:40px">Proportion in a typical layout</div>
+  <div class="ratio">
+    <div style="flex:70;background:var(--nora-black)"></div>
+    <div style="flex:24;background:var(--nora-white)"></div>
+    <div style="flex:4;background:var(--nora-ash)"></div>
+    <div style="flex:1.2;background:var(--nora-rule)"></div>
+    <div style="flex:0.8;background:var(--nora-violet)"></div>
+  </div>
+  <p class="micro" style="margin-top:12px">Pantone numbers are nearest estimates. Confirm each in a physical Pantone Formula Guide before print.<br>Black 70 · White 24 · Ash and Stone 4 · Rule 1 · Violet under 1. Amber is retired.</p>
+  <div class="folio"><span>NORA · D4 Color</span><span>01</span></div>
+</section>
+
+<!-- 02 Violet -->
+<section class="page">
+  <div class="head"><div><div class="label">NORA Violet</div><h2>A screen color. Print needs a decision.</h2></div><span class="open">OPEN: electric or royal</span></div>
+  <div class="grid vi" id="vi"></div>
+  <div class="warn" style="margin-top:44px">
+    <p style="font-size:18px"><b style="font-weight:500">Print warning.</b> <span class="ash">#9000FF is outside what four-color (CMYK) printing can reproduce. Printed in CMYK, it goes flat and muddy. The second swatch above simulates this. For print, use a Pantone spot ink and approve it against a physical Pantone Formula Guide and a printed proof. The Pantone numbers here are nearest estimates and are not confirmed.</span></p>
+  </div>
+  <div class="folio"><span>NORA · D4 Color</span><span>02</span></div>
+</section>
+
+<!-- 03 Contrast -->
+<section class="page">
+  <div class="head"><div><div class="label">Contrast</div><h2>Every text pair, measured.</h2></div><span class="micro">WCAG 2 ratios · AA body text needs 4.5:1</span></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px">
+    <div><div class="label" style="margin-bottom:8px">On NORA Black</div><table class="ct" id="ct-black"></table></div>
+    <div><div class="label" style="margin-bottom:8px">On NORA White</div><table class="ct" id="ct-white"></table></div>
+  </div>
+  <p class="micro" style="margin-top:22px">Violet on black passes only for large display type and accents. Never body text. The royal violets work on white only.</p>
+  <div class="folio"><span>NORA · D4 Color</span><span>03</span></div>
+</section>
+
+<!-- 04 Leopard -->
+<section class="page">
+  <div class="head"><div><div class="label">Leopard</div><h2>A pattern accent, not a color.</h2></div><span class="open">Provisional · replace with NORA's own acetate</span></div>
+  <div class="leo">
+    <div id="leo" style="width:560px;height:620px;overflow:hidden;outline:1px solid var(--nora-rule)"></div>
+    <div>
+      <ul style="list-style:none">
+        <li style="padding:16px 0;border-bottom:1px solid var(--nora-rule)">Original pattern, generated in code. Never stock leopard.</li>
+        <li style="padding:16px 0;border-bottom:1px solid var(--nora-rule)">At most about 5% of any layout. Never a full background on core pages.</li>
+        <li style="padding:16px 0;border-bottom:1px solid var(--nora-rule)">Tones drawn toward dark leopard acetate. A crop of the Sunny frame's own Mazzucchelli 016519 will replace it once photographed.</li>
+        <li style="padding:16px 0;border-bottom:1px solid var(--nora-rule)">Proposed uses: the lens cloth, a lining edge, one small detail per layout. Nothing approved yet.</li>
+      </ul>
+      <div class="label" style="margin:40px 0 16px">5% in a 1080 × 1350 post</div>
+      <div style="display:flex;gap:28px;align-items:flex-end">
+        <div style="position:relative;width:216px;height:270px;background:var(--nora-black);outline:1px solid var(--nora-rule)">
+          <div id="leo5" style="position:absolute;left:0;right:0;bottom:0;height:13.5px;overflow:hidden"></div>
+          <img src="../assets/logo/monogram-white.svg" style="position:absolute;left:50%;top:44%;height:44px;transform:translate(-50%,-50%)">
+        </div>
+        <p class="micro" style="max-width:280px">A thin strip at the foot of a post: 5% of the area. This is the ceiling, not the target.</p>
+      </div>
+    </div>
+  </div>
+  <div class="folio"><span>NORA · D4 Color</span><span>04</span></div>
+</section>
+
+<script>
+  const T = window.NORA_TOKENS, C = T.color;
+  const rgb = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)).join(' ');
+  const ink = (k) => (['black', 'rule', 'violet-royal-b', 'violet-royal-a', 'violet', 'stone'].includes(k) ? C.white.hex : C.black.hex);
+  const show = ['black', 'white', 'ash', 'stone', 'rule', 'violet'];
+  document.getElementById('sw').innerHTML = show.map((k) => {
+    const c = C[k];
+    return `<div style="background:${c.hex};color:${ink(k)}"><div class="n">${c.name}</div><dl>
+      <dt>Hex</dt><dd>${c.hex}</dd><dt>RGB</dt><dd>${rgb(c.hex)}</dd><dt>CMYK</dt><dd>${c.cmyk}</dd><dt>Pantone</dt><dd>${c.pantone}${k === 'white' ? '' : ' (est.)'}</dd></dl></div>`;
+  }).join('');
+
+  // Approximate look of #9000FF printed in CMYK (simulation only).
+  const vi = [
+    ['violet', 'Electric · screen', 'Sampled from the swatch. Websites, Instagram, screens.', '#6E43A6'],
+    ['violet-royal-a', 'Royal A · print alternate', 'Deeper. Holds its color in print.', null],
+    ['violet-royal-b', 'Royal B · print alternate', 'Deepest. Closest to an ink on leather or card.', null],
+  ];
+  document.getElementById('vi').innerHTML = vi.map(([k, name, note, sim]) => {
+    const c = C[k];
+    return `<div>
+      <div class="chip" style="background:${c.hex}">${sim ? `<div style="position:absolute;right:0;top:0;bottom:0;width:38%;background:${sim}"><span class="micro" style="position:absolute;left:12px;bottom:10px;color:#fff;opacity:.8">CMYK, approx.</span></div>` : ''}</div>
+      <div class="pair"><div style="background:${C.black.hex};color:${c.hex}">N° 001</div><div style="background:${C.white.hex};color:${c.hex}">N° 001</div></div>
+      <h3 style="margin-top:18px;font-size:22px">${name}</h3>
+      <p class="micro" style="margin-top:8px">${c.hex} · RGB ${rgb(c.hex)} · ${c.cmyk}<br>Pantone ${c.pantone} (estimate)</p>
+      <p style="font-size:15px;margin-top:8px" class="ash">${note}</p></div>`;
+  }).join('');
+
+  for (const r of T.contrast) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td><div class="s" style="background:${C[r.bg].hex};color:${C[r.fg].hex};outline:1px solid var(--nora-rule)">Sabae, Japan. 333 pieces.</div></td>
+      <td>${C[r.fg].name.replace(/ \(.*\)/, '')}</td><td class="num">${r.ratio.toFixed(2)}:1</td><td class="v ${r.ratio < 4.5 ? 'ash' : ''}">${r.verdict}</td>`;
+    document.getElementById('ct-' + r.bg).appendChild(tr);
+  }
+
+  document.getElementById('leo').innerHTML = NORA_LEOPARD.svg({ width: 560, height: 620, seed: 16519, scale: 1.4 });
+  document.getElementById('leo5').innerHTML = NORA_LEOPARD.svg({ width: 216, height: 14, seed: 7, scale: 0.35 });
+</script>
+</body>
+</html>

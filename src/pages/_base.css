@@ -1,0 +1,87 @@
+/* Shared page styles for NORA presentation documents. Reads tokens.css. */
+@import url('../tokens/tokens.css');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--nora-black); }
+body {
+  color: var(--nora-white);
+  font-family: var(--font-editorial);
+  -webkit-font-smoothing: antialiased;
+}
+/* Lining figures everywhere: Cormorant defaults to old-style, which makes
+   "1,111" read as "I,III". The font shorthand resets numeric variants, so
+   this needs !important to survive it. */
+*, *::before, *::after { font-variant-numeric: lining-nums !important; }
+@page { margin: 0; }
+
+/* A page is a fixed 1600 x 1000 board. */
+.page {
+  position: relative;
+  width: 1600px; height: 1000px;
+  overflow: hidden;
+  padding: 96px 112px;
+  background: var(--nora-black);
+  break-after: page;
+}
+.page.paper { background: var(--nora-white); color: var(--nora-black); }
+
+/* Running header and folio */
+.folio {
+  position: absolute; left: 112px; right: 112px; bottom: 48px;
+  display: flex; justify-content: space-between;
+  font: 400 11px/1 var(--font-functional);
+  letter-spacing: var(--tracking-caps-md); text-transform: uppercase;
+  color: var(--nora-ash);
+}
+.paper .folio { color: var(--nora-stone); }
+
+.label {
+  font: 400 12px/1.4 var(--font-functional);
+  letter-spacing: var(--tracking-caps-md); text-transform: uppercase;
+  color: var(--nora-ash);
+}
+.paper .label { color: var(--nora-stone); }
+.micro {
+  font: 400 10px/1.5 var(--font-functional);
+  letter-spacing: var(--tracking-caps-sm); text-transform: uppercase;
+  color: var(--nora-ash);
+}
+.paper .micro { color: var(--nora-stone); }
+
+h1 { font-weight: 300; font-size: 64px; line-height: 1.05; letter-spacing: -0.01em; }
+h2 { font-weight: 300; font-size: 40px; line-height: 1.1; letter-spacing: -0.01em; }
+h3 { font-weight: 400; font-size: 24px; line-height: 1.2; }
+p, li { font-size: 19px; line-height: 1.5; }
+.lede { font-size: 22px; line-height: 1.45; max-width: 760px; }
+.ash { color: var(--nora-ash); }
+.paper .ash { color: var(--nora-stone); }
+
+.hairline { height: 1px; background: var(--nora-rule); border: 0; }
+.paper .hairline { background: #CFCBC3; }
+
+.open {
+  display: inline-block;
+  font: 400 11px/1.4 var(--font-functional);
+  letter-spacing: var(--tracking-caps-sm); text-transform: uppercase;
+  color: var(--nora-white);
+  border: 1px dashed var(--nora-ash);
+  padding: 6px 10px;
+}
+.paper .open { color: var(--nora-black); border-color: var(--nora-stone); }
+
+.grid { display: grid; gap: 32px; }
+.head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; }
+.head .label { margin-bottom: 14px; }
+.tile { position: relative; display: flex; align-items: center; justify-content: center; }
+.tile .cap { position: absolute; left: 20px; bottom: 16px; }
+.tile .cap-r { position: absolute; right: 20px; bottom: 16px; }
+.on-black { background: var(--nora-black); outline: 1px solid var(--nora-rule); }
+.on-white { background: var(--nora-white); }
+.on-white .micro, .on-white .label { color: var(--nora-stone); }
+img.logo { display: block; }
+table { border-collapse: collapse; width: 100%; }
+td, th { text-align: left; vertical-align: top; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--nora-rule); }
+.paper td, .paper th { border-bottom-color: #D9D5CD; }
+th { font: 400 11px/1.4 var(--font-functional); letter-spacing: var(--tracking-caps-md); text-transform: uppercase; color: var(--nora-ash); font-weight: 400; }
+td { font-size: 17px; line-height: 1.4; }
+td.num, .num { font-variant-numeric: lining-nums tabular-nums !important; }

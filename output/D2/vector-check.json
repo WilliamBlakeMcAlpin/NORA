@@ -1,0 +1,30 @@
+{
+ "monogram": {
+  "meanDiff": 2.27,
+  "strongMismatchPx": 1,
+  "inkAreaSource": 10392,
+  "inkAreaTrace": 10447,
+  "areaDeltaPct": 0.5
+ },
+ "wordmark": {
+  "meanDiff": 3.98,
+  "strongMismatchPx": 0,
+  "inkAreaSource": 3216,
+  "inkAreaTrace": 3247,
+  "areaDeltaPct": 1
+ },
+ "descriptor": {
+  "meanDiff": 8.28,
+  "strongMismatchPx": 11,
+  "inkAreaSource": 276,
+  "inkAreaTrace": 307,
+  "areaDeltaPct": 11
+ },
+ "rule": {
+  "meanDiff": 7.26,
+  "strongMismatchPx": 0,
+  "inkAreaSource": 94,
+  "inkAreaTrace": 92,
+  "areaDeltaPct": -2.1
+ }
+}

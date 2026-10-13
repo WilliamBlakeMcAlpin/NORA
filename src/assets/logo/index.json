@@ -1,0 +1,198 @@
+[
+ {
+  "file": "lockup-luxury-eyewear-white",
+  "app": "lockup-luxury-eyewear",
+  "ink": "white",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "lockup-no-descriptor-white",
+  "app": "lockup-no-descriptor",
+  "ink": "white",
+  "w": 229,
+  "h": 398
+ },
+ {
+  "file": "lockup-eyewear-white",
+  "app": "lockup-eyewear",
+  "ink": "white",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "lockup-sabae-japan-white",
+  "app": "lockup-sabae-japan",
+  "ink": "white",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "wordmark-white",
+  "app": "wordmark",
+  "ink": "white",
+  "w": 209,
+  "h": 57
+ },
+ {
+  "file": "monogram-white",
+  "app": "monogram",
+  "ink": "white",
+  "w": 221,
+  "h": 262
+ },
+ {
+  "file": "temple-stamp-white",
+  "app": "temple-stamp",
+  "ink": "white",
+  "w": 386.37862595419847,
+  "h": 89.60000000000001
+ },
+ {
+  "file": "lockup-luxury-eyewear-black",
+  "app": "lockup-luxury-eyewear",
+  "ink": "black",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "lockup-no-descriptor-black",
+  "app": "lockup-no-descriptor",
+  "ink": "black",
+  "w": 229,
+  "h": 398
+ },
+ {
+  "file": "lockup-eyewear-black",
+  "app": "lockup-eyewear",
+  "ink": "black",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "lockup-sabae-japan-black",
+  "app": "lockup-sabae-japan",
+  "ink": "black",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "wordmark-black",
+  "app": "wordmark",
+  "ink": "black",
+  "w": 209,
+  "h": 57
+ },
+ {
+  "file": "monogram-black",
+  "app": "monogram",
+  "ink": "black",
+  "w": 221,
+  "h": 262
+ },
+ {
+  "file": "temple-stamp-black",
+  "app": "temple-stamp",
+  "ink": "black",
+  "w": 386.37862595419847,
+  "h": 89.60000000000001
+ },
+ {
+  "file": "lockup-luxury-eyewear-violet",
+  "app": "lockup-luxury-eyewear",
+  "ink": "violet",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "lockup-no-descriptor-violet",
+  "app": "lockup-no-descriptor",
+  "ink": "violet",
+  "w": 229,
+  "h": 398
+ },
+ {
+  "file": "lockup-eyewear-violet",
+  "app": "lockup-eyewear",
+  "ink": "violet",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "lockup-sabae-japan-violet",
+  "app": "lockup-sabae-japan",
+  "ink": "violet",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "wordmark-violet",
+  "app": "wordmark",
+  "ink": "violet",
+  "w": 209,
+  "h": 57
+ },
+ {
+  "file": "monogram-violet",
+  "app": "monogram",
+  "ink": "violet",
+  "w": 221,
+  "h": 262
+ },
+ {
+  "file": "temple-stamp-violet",
+  "app": "temple-stamp",
+  "ink": "violet",
+  "w": 386.37862595419847,
+  "h": 89.60000000000001
+ },
+ {
+  "file": "lockup-luxury-eyewear-single",
+  "app": "lockup-luxury-eyewear",
+  "ink": "single",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "lockup-no-descriptor-single",
+  "app": "lockup-no-descriptor",
+  "ink": "single",
+  "w": 229,
+  "h": 398
+ },
+ {
+  "file": "lockup-eyewear-single",
+  "app": "lockup-eyewear",
+  "ink": "single",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "lockup-sabae-japan-single",
+  "app": "lockup-sabae-japan",
+  "ink": "single",
+  "w": 229,
+  "h": 489
+ },
+ {
+  "file": "wordmark-single",
+  "app": "wordmark",
+  "ink": "single",
+  "w": 209,
+  "h": 57
+ },
+ {
+  "file": "monogram-single",
+  "app": "monogram",
+  "ink": "single",
+  "w": 221,
+  "h": 262
+ },
+ {
+  "file": "temple-stamp-single",
+  "app": "temple-stamp",
+  "ink": "single",
+  "w": 386.37862595419847,
+  "h": 89.60000000000001
+ }
+]

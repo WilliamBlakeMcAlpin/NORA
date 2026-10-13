@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nora-page" content="1600x1000">
+<meta name="nora-output" content="D2">
+<title>NORA Logo System</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .L { display:block; }
+  .anat { display:grid; grid-template-columns: 560px 1fr; gap: 96px; align-items:center; height: 720px; }
+  .anat ol { list-style:none; counter-reset:a; }
+  .anat li { counter-increment:a; display:grid; grid-template-columns: 48px 1fr; padding: 22px 0; border-bottom:1px solid var(--nora-rule); }
+  .anat li::before { content: counter(a, decimal-leading-zero); font: 400 12px/2 var(--font-functional); letter-spacing: .2em; color: var(--nora-ash); }
+  .anat li b { font-weight:400; display:block; font-size:22px; }
+  .anat li span { color: var(--nora-ash); font-size:17px; }
+  .anat li span.open { font-size:11px; color: var(--nora-white); margin-top:10px; }
+  .opts { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .opts .tile { height: 560px; flex-direction:column; }
+  .optnote { margin-top: 18px; }
+  .optnote h3 { font-size:21px; margin-bottom:6px; }
+  .optnote p { font-size:15px; color: var(--nora-ash); line-height:1.45; }
+  .apps { grid-template-columns: 1.1fr 1fr 1.3fr; gap: 24px; }
+  .apps .tile { height: 460px; }
+  .inks { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .inks .tile { height: 330px; }
+  .inks .tile.sm { height: 200px; margin-top: 24px; }
+  .cs-wrap { display:grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+  .cs { position:relative; display:inline-block; }
+  .cs .box { position:absolute; border:1px dashed var(--nora-violet); }
+  .cs .x { position:absolute; background: rgba(144,0,255,.09); }
+  .cs .xl { position:absolute; font: 400 12px/1 var(--font-functional); color: var(--nora-white); letter-spacing:.12em; }
+  .mins td { font-size:16px; }
+  .mis { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .mis .tile { height: 300px; overflow:hidden; }
+  .mis .no { position:absolute; left:18px; top:16px; font: 400 11px/1.4 var(--font-functional); letter-spacing: .2em; text-transform:uppercase; color: var(--nora-ash); }
+  .chk { display:grid; grid-template-columns: 430px 430px 1fr; gap: 40px; }
+  .mag { position:relative; width:430px; height:560px; overflow:hidden; background:#0a0a0a; outline:1px solid var(--nora-rule); }
+  .mag img { position:absolute; }
+</style>
+<script src="../tokens/tokens.js"></script>
+<script src="../assets/logo/check/check.js"></script>
+</head>
+<body>
+
+<!-- 01 Cover -->
+<section class="page">
+  <div style="height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:56px">
+    <img class="L" src="../assets/logo/monogram-white.svg" style="height:200px">
+    <div class="label">Logo system</div>
+  </div>
+  <div class="folio"><span>NORA · D2 Logo system</span><span>Phase 1 draft · Checkpoint 1</span></div>
+</section>
+
+<!-- 02 The master -->
+<section class="page">
+  <div class="anat">
+    <div style="display:flex;justify-content:center"><img class="L" src="../assets/logo/lockup-luxury-eyewear-white.svg" style="height:700px"></div>
+    <div>
+      <div class="label" style="margin-bottom:18px">The master lockup, as supplied</div>
+      <h2 style="margin-bottom:40px">Frozen. Traced, not redrawn.</h2>
+      <ol>
+        <li><div><b>Monogram</b><span>High-contrast serif N with an interlaced A-form and a swash tail.</span></div></li>
+        <li><div><b>Hairline rule</b><span>A single fine line, slightly wider than the monogram. Gray on black in the source. Here: ink at 40% on screen, full strength in single-color use.</span></div></li>
+        <li><div><b>Wordmark</b><span>NORA in a high-contrast serif. Typeface not identified. <span class="open">OPEN: designer or font name</span></span></div></li>
+        <li><div><b>Descriptor</b><span>Tracked capitals. "LUXURY" breaks the voice rules. <span class="open">OPEN: Blake to choose, next page</span></span></div></li>
+      </ol>
+      <p class="micro" style="margin-top:28px;max-width:640px">Source: refs/logo/nora-logo-black.jpg. One cleanup: the rule sat 5px right of the shared center line and has been centered. Replace this trace with a designer's master file if one exists.</p>
+    </div>
+  </div>
+  <div class="folio"><span>NORA · D2 Logo system</span><span>02</span></div>
+</section>
+
+<!-- 03 Descriptor options -->
+<section class="page">
+  <div class="head"><div><div class="label">Full lockup · descriptor line</div><h2>Four options. One choice.</h2></div><span class="open">OPEN: Blake to choose</span></div>
+  <div class="grid opts">
+    <div><div class="tile on-black"><img class="L" src="../assets/logo/lockup-luxury-eyewear-white.svg" style="height:420px"><span class="cap micro">A</span></div>
+      <div class="optnote"><h3>Luxury Eyewear</h3><p>The original. Kept untouched. Uses a banned word, so not recommended.</p></div></div>
+    <div><div class="tile on-black"><img class="L" src="../assets/logo/lockup-no-descriptor-white.svg" style="height:342px;margin-bottom:78px"><span class="cap micro">B</span></div>
+      <div class="optnote"><h3>No descriptor</h3><p>Matches the amber photo version. The quietest. Recommended as the primary lockup.</p></div></div>
+    <div><div class="tile on-black"><img class="L" src="../assets/logo/lockup-eyewear-white.svg" style="height:420px"><span class="cap micro">C</span></div>
+      <div class="optnote"><h3>Eyewear</h3><p>Cut from the original letters, re-centered. Nothing retyped.</p></div></div>
+    <div><div class="tile on-black"><img class="L" src="../assets/logo/lockup-sabae-japan-white.svg" style="height:420px"><span class="cap micro">D</span></div>
+      <div class="optnote"><h3>Sabae · Japan</h3><p>A fact, not a claim. New letters, set in Jost with the original spacing. Recommended for packaging and the card.</p></div></div>
+  </div>
+  <div class="folio"><span>NORA · D2 Logo system</span><span>03</span></div>
+</section>
+
+<!-- 04 Applications -->
+<section class="page">
+  <div class="head"><div><div class="label">Applications</div><h2>Wordmark. Monogram. Temple stamp.</h2></div></div>
+  <div class="grid apps">
+    <div><div class="tile on-black"><img class="L" src="../assets/logo/wordmark-white.svg" style="width:300px"><span class="cap micro">Wordmark only</span></div>
+      <p class="micro" style="margin-top:16px">Site header, email signature, legal lines, the box spine.</p></div>
+    <div><div class="tile on-black"><img class="L" src="../assets/logo/monogram-white.svg" style="height:260px"><span class="cap micro">Monogram only</span></div>
+      <p class="micro" style="margin-top:16px">Instagram avatar, favicon, case deboss, box lid, card front.</p></div>
+    <div><div class="tile on-black"><img class="L" src="../assets/logo/temple-stamp-white.svg" style="width:420px"><span class="cap micro">Interior temple stamp</span><span class="cap-r open">Proposal</span></div>
+      <p class="micro" style="margin-top:16px">The authentication mark. Inside the temple only. Engraving sizes in D3, pending Sabaeframe.</p></div>
+  </div>
+  <div class="folio"><span>NORA · D2 Logo system</span><span>04</span></div>
+</section>
+
+<!-- 05 Color versions -->
+<section class="page">
+  <div class="head"><div><div class="label">Color versions</div><h2>Four inks. Nothing else.</h2></div></div>
+  <div class="grid inks">
+    <div class="tile on-black"><img class="L" src="../assets/logo/lockup-no-descriptor-white.svg" style="height:230px"><span class="cap micro">White on black · primary</span></div>
+    <div class="tile on-white"><img class="L" src="../assets/logo/lockup-no-descriptor-black.svg" style="height:230px"><span class="cap micro">Black on white</span></div>
+    <div class="tile on-black"><img class="L" src="../assets/logo/lockup-no-descriptor-violet.svg" style="height:230px"><span class="cap micro">Violet on black · limited</span></div>
+    <div class="tile" style="background:#2B2724"><img class="L" src="../assets/logo/lockup-no-descriptor-single.svg" style="height:230px;opacity:.55"><span class="cap micro" style="color:#8C8780">Single color · deboss preview</span></div>
+  </div>
+  <div class="grid inks">
+    <div class="tile sm on-black"><img class="L" src="../assets/logo/monogram-white.svg" style="height:120px"></div>
+    <div class="tile sm on-white"><img class="L" src="../assets/logo/monogram-black.svg" style="height:120px"></div>
+    <div class="tile sm on-black"><img class="L" src="../assets/logo/monogram-violet.svg" style="height:120px"></div>
+    <div class="tile sm" style="background:#2B2724"><img class="L" src="../assets/logo/monogram-single.svg" style="height:120px;opacity:.55"></div>
+  </div>
+  <p class="micro" style="margin-top:24px">Violet: the one accent per layout. Never for small sizes on black. Single color: one flat ink, rule at full strength. For deboss, engraving and foil.</p>
+  <div class="folio"><span>NORA · D2 Logo system</span><span>05</span></div>
+</section>
+
+<!-- 06 Clear space -->
+<section class="page">
+  <div class="head"><div><div class="label">Clear space</div><h2>X = the height of the N in NORA.</h2></div></div>
+  <div class="cs-wrap">
+    <div style="display:flex;justify-content:center;align-items:center;height:680px">
+      <div class="cs" id="cs1"></div>
+    </div>
+    <div style="display:flex;justify-content:center;align-items:center;height:700px;flex-direction:column;gap:40px">
+      <div class="cs" id="cs2"></div>
+      <div class="cs" id="cs3"></div>
+    </div>
+  </div>
+  <p class="micro" style="position:absolute;left:112px;bottom:96px;max-width:900px">Lockup and wordmark: 1X on every side. Monogram alone: one quarter of its own height. Nothing enters this space: no text, no edge, no other mark.</p>
+  <div class="folio"><span>NORA · D2 Logo system</span><span>06</span></div>
+</section>
+
+<!-- 07 Minimum sizes -->
+<section class="page">
+  <div class="head"><div><div class="label">Minimum sizes</div><h2>Below this, the hairlines disappear.</h2></div><span class="open">Proposed · confirm with a printed test sheet</span></div>
+  <div style="display:grid;grid-template-columns: 1fr 520px;gap:72px">
+    <table class="mins">
+      <tr><th>Application</th><th>Print</th><th>Screen</th><th>Why</th></tr>
+      <tr><td>Lockup with descriptor</td><td class="num">30 mm wide</td><td class="num">140 px wide</td><td class="ash">Descriptor letters fall under 1.3 mm tall</td></tr>
+      <tr><td>Lockup, no descriptor</td><td class="num">20 mm wide</td><td class="num">96 px wide</td><td class="ash">Rule and A-form hairlines</td></tr>
+      <tr><td>Wordmark</td><td class="num">15 mm wide</td><td class="num">64 px wide</td><td class="ash">Serif hairlines on R and A</td></tr>
+      <tr><td>Monogram</td><td class="num">8 mm tall</td><td class="num">32 px tall</td><td class="ash">The thin A-form stroke. 16 px favicon needs a test.</td></tr>
+      <tr><td>Temple stamp</td><td colspan="2"><span class="open">OPEN: confirm with Sabaeframe</span></td><td class="ash">Hand engraving sets the limit. See D3.</td></tr>
+    </table>
+    <div>
+      <div class="label" style="margin-bottom:24px">Monogram on screen, actual pixels</div>
+      <div style="display:flex;align-items:flex-end;gap:40px">
+        <div><img class="L" src="../assets/logo/monogram-white.svg" style="height:16px"><div class="micro" style="margin-top:10px">16</div></div>
+        <div><img class="L" src="../assets/logo/monogram-white.svg" style="height:24px"><div class="micro" style="margin-top:10px">24</div></div>
+        <div><img class="L" src="../assets/logo/monogram-white.svg" style="height:32px"><div class="micro" style="margin-top:10px">32 · min</div></div>
+        <div><img class="L" src="../assets/logo/monogram-white.svg" style="height:48px"><div class="micro" style="margin-top:10px">48</div></div>
+        <div><img class="L" src="../assets/logo/monogram-white.svg" style="height:96px"><div class="micro" style="margin-top:10px">96</div></div>
+      </div>
+      <div class="label" style="margin:56px 0 24px">Lockup B at screen minimum</div>
+      <img class="L" src="../assets/logo/lockup-no-descriptor-white.svg" style="width:96px">
+    </div>
+  </div>
+  <div class="folio"><span>NORA · D2 Logo system</span><span>07</span></div>
+</section>
+
+<!-- 08 Misuse -->
+<section class="page">
+  <div class="head"><div><div class="label">Misuse</div><h2>Never.</h2></div></div>
+  <div class="grid mis">
+    <div class="tile on-black"><span class="no">Stretch</span><img class="L" src="../assets/logo/lockup-no-descriptor-white.svg" style="height:180px;width:200px;transform:scaleX(1.6)"></div>
+    <div class="tile on-black"><span class="no">Recolor</span><img class="L" src="../assets/logo/lockup-no-descriptor-white.svg" style="height:180px;filter:sepia(1) saturate(6) hue-rotate(-12deg) brightness(.85)"></div>
+    <div class="tile on-black"><span class="no">Add effects</span><img class="L" src="../assets/logo/lockup-no-descriptor-white.svg" style="height:180px;filter:drop-shadow(0 0 14px #9000FF) drop-shadow(6px 8px 2px #000)"></div>
+    <div class="tile on-black"><span class="no">Rotate</span><img class="L" src="../assets/logo/lockup-no-descriptor-white.svg" style="height:180px;transform:rotate(-14deg)"></div>
+    <div class="tile on-black"><span class="no">Retype the wordmark</span><div style="font: 600 64px/1 var(--font-editorial);letter-spacing:.04em">NORA</div></div>
+    <div class="tile on-black"><span class="no">Rearrange</span><div style="display:flex;align-items:center;gap:20px"><img class="L" src="../assets/logo/wordmark-white.svg" style="width:120px"><img class="L" src="../assets/logo/monogram-white.svg" style="height:90px"></div></div>
+    <div class="tile" style="background:repeating-linear-gradient(115deg,#bdb6aa 0 6px,#2b2724 6px 15px,#9a8f80 15px 19px)"><span class="no" style="color:#fff;background:#0C0B0A;padding:2px 6px">Busy ground, low contrast</span><img class="L" src="../assets/logo/lockup-no-descriptor-white.svg" style="height:180px"></div>
+    <div class="tile on-black"><span class="no">Logo on the outside of the frame</span>
+      <svg width="300" height="120" viewBox="0 0 300 120" fill="none" stroke="#8C8780" stroke-width="1.2"><path d="M10 40 H250 Q285 40 292 70 L296 100"/><path d="M10 58 H246 Q272 58 278 80 L282 104"/><image href="../assets/logo/wordmark-white.svg" x="96" y="42" width="50" height="14"/></svg></div>
+  </div>
+  <p class="micro" style="margin-top:24px">Also never: outline the mark, add a frame or badge, set it in a gradient, or crop it. The logo goes on the inside of the temple. The outside stays clean.</p>
+  <div class="folio"><span>NORA · D2 Logo system</span><span>08</span></div>
+</section>
+
+<!-- 09 Vectorization check -->
+<section class="page">
+  <div class="head"><div><div class="label">Vectorization check</div><h2>Trace laid over the source.</h2></div></div>
+  <div class="chk">
+    <div><div class="mag"><img src="../../refs/logo/nora-logo-black.jpg" style="width:1500px;left:-510px;top:-330px"><img src="../assets/logo/check/overlay.svg" style="width:1500px;left:-510px;top:-330px"></div>
+      <p class="micro" style="margin-top:14px">Source at 1.7× with the vector outline in violet</p></div>
+    <div><div class="mag"><img src="../assets/logo/check/diff.png" style="width:1500px;left:-510px;top:-330px"></div>
+      <p class="micro" style="margin-top:14px">Difference map · bright = mismatch</p></div>
+    <div>
+      <table id="chk"><tr><th>Part</th><th>Avg. difference</th><th>Ink area</th></tr></table>
+      <p style="font-size:16px;margin-top:28px" class="ash">The monogram and wordmark match the source within about 1% of ink area. The only visible differences are edge softness from the source's JPEG compression. The descriptor reads heavier because the source letters are soft gray and the vector is solid ink. The source is about 220 px wide, so fine detail below one source pixel cannot be verified.</p>
+      <p style="font-size:16px;margin-top:16px">A designer's master file should replace this trace when one exists, especially for the trademark filing.</p>
+    </div>
+  </div>
+  <div class="folio"><span>NORA · D2 Logo system</span><span>09</span></div>
+</section>
+
+<script>
+  // Clear-space diagrams, drawn to scale from the logo's own measurements.
+  const X = 56; // wordmark cap height, source px
+  function cs(el, file, w, h, pad, scale, label) {
+    const W = w * scale, H = h * scale, P = pad * scale;
+    el.style.width = (W + 2 * P) + 'px'; el.style.height = (H + 2 * P) + 'px';
+    el.innerHTML = `<img src="../assets/logo/${file}" style="position:absolute;left:${P}px;top:${P}px;width:${W}px;height:${H}px">
+      <div class="box" style="left:0;top:0;right:0;bottom:0"></div>
+      <div class="x" style="left:0;top:0;right:0;height:${P}px"></div>
+      <div class="x" style="left:0;bottom:0;right:0;height:${P}px"></div>
+      <div class="x" style="left:0;top:${P}px;width:${P}px;bottom:${P}px"></div>
+      <div class="x" style="right:0;top:${P}px;width:${P}px;bottom:${P}px"></div>
+      <div class="xl" style="left:${P + W / 2 - 8}px;top:${P / 2 - 6}px">${label}</div>`;
+  }
+  cs(document.getElementById('cs1'), 'lockup-no-descriptor-white.svg', 229, 398, X, 1.08, 'X');
+  cs(document.getElementById('cs2'), 'wordmark-white.svg', 209, 57, X, 1.1, 'X');
+  cs(document.getElementById('cs3'), 'monogram-white.svg', 221, 262, 262 / 4, 0.8, '¼');
+  const c = window.NORA_TRACE_CHECK || {};
+  const t = document.getElementById('chk');
+  for (const [k, v] of Object.entries(c)) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td style="text-transform:capitalize">${k}</td><td class="num">${(v.meanDiff / 255 * 100).toFixed(1)}%</td><td class="num">${v.areaDeltaPct > 0 ? '+' : ''}${v.areaDeltaPct}%</td>`;
+    t.appendChild(tr);
+  }
+</script>
+</body>
+</html>
