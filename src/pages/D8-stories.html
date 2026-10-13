@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nora-page" content="1080x1920">
+<meta name="nora-output" content="D8">
+<title>NORA Instagram Stories</title>
+<!--
+  NORA story templates, 1080 x 1920 px.
+  Safe zones: keep text out of the top 250px and bottom 340px (Instagram UI).
+  Edit text in place, then run `node scripts/export.mjs D8-stories`.
+-->
+<link rel="stylesheet" href="_ig.css">
+</head>
+<body>
+
+<!-- S1 · Numeral -->
+<section class="page story" data-name="numeral">
+  <div class="abs ig-label" style="left:80px;top:290px">Sunny</div>
+  <div class="abs center-x" style="top:700px;font:300 260px/1 var(--font-editorial);letter-spacing:-0.02em">N° —</div>
+  <div class="abs center-x" style="top:990px;font:300 88px/1 var(--font-editorial);color:var(--nora-ash)">/333</div>
+  <div class="hl"></div>
+  <div class="abs ig-label" style="left:80px;top:1230px">Hand-engraved inside the temple</div>
+</section>
+
+<!-- S2 · Macro -->
+<section class="page story" data-name="macro">
+  <img class="bleed" src="../assets/images/macro-acetate-bw-story.jpg">
+  <div class="shade"></div>
+  <div class="abs ig-label w" style="left:80px;bottom:400px">Acetate · detail</div>
+  <div class="abs ig-label" style="left:80px;bottom:360px;font-size:22px;letter-spacing:.14em">[Sample image · replace]</div>
+</section>
+
+<!-- S3 · Product -->
+<section class="page story" data-name="product">
+  <div class="ph" style="left:80px;right:80px;top:300px;height:820px">
+    <img src="../assets/placeholders/frame-front.svg" style="width:640px">
+    <div>[Placeholder: product photo · B&amp;W]</div>
+  </div>
+  <div class="hl"></div>
+  <div class="abs ig-line" style="left:80px;top:1222px">Bella</div>
+  <div class="abs ig-label" style="left:80px;top:1296px">All metal · Silver · Gradient lens</div>
+  <div class="abs ig-label" style="right:80px;top:1296px">$1,111</div>
+</section>
+
+<!-- S4 · Origin -->
+<section class="page story" data-name="origin">
+  <div class="abs ig-display" style="left:80px;bottom:calc(1920px - 1187px + 48px)">Sabae,<br>Japan.</div>
+  <div class="hl"></div>
+  <div class="abs ig-label" style="left:80px;top:1230px">Every frame. Every step.</div>
+  <img class="abs" src="../assets/logo/monogram-white.svg" style="left:80px;top:300px;height:72px">
+</section>
+
+<!-- S5 · Waitlist with link sticker zone -->
+<section class="page story" data-name="waitlist">
+  <img class="abs" src="../assets/logo/monogram-white.svg" style="left:50%;top:420px;height:150px;transform:translateX(-50%)">
+  <div class="abs center-x ig-head" style="top:800px">Waitlist open.</div>
+  <div class="hl"></div>
+  <div class="abs" style="left:220px;right:220px;top:1300px;height:120px;border:2px dashed var(--nora-violet);display:flex;align-items:center;justify-content:center">
+    <span class="ig-label" style="font-size:22px">[Link sticker · ohitsnora.com]</span>
+  </div>
+</section>
+
+</body>
+</html>

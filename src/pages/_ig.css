@@ -1,0 +1,39 @@
+/* Instagram templates. Canvas sizes are exact pixels: posts 1080x1350,
+   stories and highlight covers 1080x1920, profile 1080x1080. */
+@import url('_base.css');
+
+html, body { background: #222; }
+.page { padding: 0; }
+.post  { width: 1080px; height: 1350px; }
+.story { width: 1080px; height: 1920px; }
+.prof  { width: 1080px; height: 1080px; }
+
+/* The hairline sits at the golden section (61.8%) of every post. */
+.hl { position: absolute; left: 80px; right: 80px; height: 1px; background: var(--nora-rule); }
+.post .hl { top: 834px; }
+.story .hl { top: 1187px; }
+
+.ig-label {
+  font: 400 26px/1.4 var(--font-functional);
+  letter-spacing: var(--tracking-caps-md); text-transform: uppercase;
+  color: var(--nora-ash);
+}
+.ig-label.w { color: var(--nora-white); }
+.ig-line { font: 400 48px/1.25 var(--font-editorial); }
+.ig-head { font: 300 88px/1.08 var(--font-editorial); letter-spacing: -0.01em; }
+.ig-display { font: 300 160px/1 var(--font-editorial); letter-spacing: -0.02em; }
+.abs { position: absolute; }
+.center-x { left: 0; right: 0; text-align: center; }
+.bleed { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,11,10,0) 45%, rgba(12,11,10,.85) 100%); }
+
+/* Visible placeholder for photography that does not exist yet. */
+.ph {
+  position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px;
+  border: 2px dashed #3a3835; color: var(--nora-ash);
+  font: 400 22px/1.5 var(--font-functional); letter-spacing: .14em; text-transform: uppercase; text-align: center;
+  background: #121110;
+}
+
+/* Story safe zones: keep text out of the top 250px and bottom 340px (app UI). */
+.safe-guide { display: none; }

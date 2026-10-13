@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" fill="none" stroke="#8C8780" stroke-width="1.5">
+  <!-- Generic line placeholder for a sunglasses front view. Not a factory drawing. -->
+  <path d="M30 60 C30 40 40 34 62 34 H232 C254 34 262 42 262 62 V112 C262 158 236 184 186 184 H106 C58 184 30 156 30 112 Z"/>
+  <path d="M338 62 C338 42 346 34 368 34 H538 C560 34 570 40 570 60 V112 C570 156 542 184 494 184 H414 C364 184 338 158 338 112 Z"/>
+  <path d="M262 66 C276 52 324 52 338 66"/>
+  <path d="M30 52 L4 48"/>
+  <path d="M570 52 L596 48"/>
+</svg>

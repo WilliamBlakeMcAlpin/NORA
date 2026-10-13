@@ -53,7 +53,7 @@ window.NORA_TOKENS = {
   "violet": {
    "hex": "#9000FF",
    "name": "NORA Violet (electric)",
-   "role": "Accent. One violet moment per layout, at most. Never body text on black.",
+   "role": "Screen accent (DECIDED). One violet moment per layout, at most. Never body text on black. Not for print.",
    "source": "Sampled from refs/palette/violet.jpg: a single flat value, RGB 144 0 255.",
    "cmyk": "C72 M88 Y0 K0",
    "pantone": "2592 C or 266 C",
@@ -64,7 +64,7 @@ window.NORA_TOKENS = {
   "violet-royal-a": {
    "hex": "#5F259F",
    "name": "Royal Violet A (print alternate)",
-   "role": "OPEN: print-safe alternate. Deeper, holds in CMYK and spot.",
+   "role": "Print violet (DECIDED). Use wherever violet is printed: card, packaging, stationery. Spot ink Pantone to be confirmed.",
    "cmyk": "C77 M95 Y0 K0",
    "pantone": "267 C",
    "pantone_note": "267 C (nearest estimate; verify)"
@@ -72,7 +72,7 @@ window.NORA_TOKENS = {
   "violet-royal-b": {
    "hex": "#3C1A6E",
    "name": "Royal Violet B (print alternate)",
-   "role": "OPEN: print-safe alternate. Deepest, closest to ink-on-leather.",
+   "role": "Not selected. Kept for reference.",
    "cmyk": "C92 M100 Y12 K12",
    "pantone": "2685 C",
    "pantone_note": "2685 C (nearest estimate; verify)"
@@ -260,9 +260,17 @@ window.NORA_TOKENS = {
   "hairline-print-min": "0.1mm (confirm with printer)"
  },
  "logo": {
-  "descriptor": "OPEN: 'LUXURY EYEWEAR' (original) / none / 'EYEWEAR' / 'SABAE · JAPAN'",
+  "descriptor": "DECIDED 2026-10-13: primary lockup = no descriptor (B). Packaging, authenticity card, stationery = 'SABAE · JAPAN' (D). Original 'LUXURY EYEWEAR' (A) kept on file only.",
   "rule_opacity_on_screen": 0.4,
-  "clear_space": "X = cap height of the NORA wordmark. Full lockup and wordmark: 1X on all sides. Monogram: 0.5X measured at the monogram's own NORA-equivalent scale (one quarter of monogram height)."
+  "clear_space": "X = cap height of the NORA wordmark. Full lockup and wordmark: 1X on all sides. Monogram: 0.5X measured at the monogram's own NORA-equivalent scale (one quarter of monogram height).",
+  "primary": "lockup-no-descriptor",
+  "formal": "lockup-sabae-japan"
+ },
+ "devices": {
+  "status": "DECIDED 2026-10-13: all three approved, used sparingly.",
+  "prism": "Hairline triangle from the case profile. Marker only; never filled; never holds the logo. Proportions OPEN until case sketches arrive.",
+  "numeral": "N° —/333. Real numbers never in marketing; N° 001/333 only as a labeled sample.",
+  "hairline": "The lockup rule as the one line per layout, at 61.8% of height."
  },
  "contrast": [
   {

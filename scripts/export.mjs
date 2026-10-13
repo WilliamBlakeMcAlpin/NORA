@@ -47,7 +47,9 @@ async function exportLogos() {
 // ---------- pages ----------
 async function exportPages() {
   const dir = path.join(root, 'src/pages');
-  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.html') && f.includes(filter) && !f.startsWith('_'));
+  // Pages that compose other exports (grid previews) go last.
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.html') && f.includes(filter) && !f.startsWith('_'))
+    .sort((a, b) => (a.includes('grid') - b.includes('grid')) || a.localeCompare(b));
   for (const f of files) {
     const src = fs.readFileSync(path.join(dir, f), 'utf8');
     const size = (src.match(/name="nora-page" content="(\d+)x(\d+)"/) || []).slice(1).map(Number);
@@ -64,7 +66,8 @@ async function exportPages() {
     const sections = await page.$$('.page');
     for (let i = 0; i < sections.length; i++) {
       const n = String(i + 1).padStart(2, '0');
-      const file = `${name}-p${n}.png`;
+      const label = await sections[i].getAttribute('data-name');
+      const file = label ? `${name}-${n}-${label}.png` : `${name}-p${n}.png`;
       await sections[i].screenshot({ path: path.join(outDir, 'png', file) });
       fs.copyFileSync(path.join(outDir, 'png', file), path.join(root, 'output/previews', file));
     }

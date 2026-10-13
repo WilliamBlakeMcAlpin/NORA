@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nora-page" content="1200x2380">
+<meta name="nora-output" content="D8">
+<title>NORA Grid Preview</title>
+<!-- Profile preview built from the exported feed, highlight and profile PNGs.
+     The newest post sits top left, so the grid shows posting order in reverse.
+     Instagram's profile grid crops posts to 3:4, so each tile is a 3:4 crop. -->
+<link rel="stylesheet" href="_base.css">
+<script src="../content/captions.js"></script>
+<style>
+  .page { width:1200px; height:2380px; padding:0; background:#000; }
+  .top { padding: 56px 48px 0; }
+  .row { display:flex; align-items:center; gap:56px; }
+  .av { width:220px; height:220px; border-radius:50%; overflow:hidden; outline:1px solid #262626; }
+  .av img { width:100%; height:100%; }
+  .bio { font: 400 30px/1.45 var(--font-functional); color:#F3F0E9; white-space: pre-line; margin-top:28px; }
+  .hls { display:flex; gap:44px; margin: 52px 0 48px; }
+  .hl-i { text-align:center; }
+  .hl-c { width:150px; height:150px; border-radius:50%; overflow:hidden; outline:2px solid #333; outline-offset:6px; }
+  .hl-c img { width:100%; height:100%; object-fit:cover; }
+  .hl-i div.t { font: 400 24px/1 var(--font-functional); color:#F3F0E9; margin-top:22px; }
+  .grid9 { display:grid; grid-template-columns: repeat(3, 1fr); gap:4px; }
+  .grid9 div { aspect-ratio: 3 / 4; overflow:hidden; background:#111; }
+  .grid9 img { width:100%; height:100%; object-fit:cover; }
+  .note { position:absolute; left:48px; bottom:24px; }
+</style>
+</head>
+<body>
+<section class="page" data-name="profile">
+  <div class="top">
+    <div class="row">
+      <div class="av"><img src="../../output/D8/png/D8-profile-01-profile.png"></div>
+      <div>
+        <div style="font: 400 34px/1 var(--font-functional);color:#F3F0E9" id="handle"></div>
+        <div style="font: 400 30px/1 var(--font-functional);color:#8C8780;margin-top:18px">NORA</div>
+      </div>
+    </div>
+    <div class="bio" id="bio"></div>
+    <div class="hls" id="hls"></div>
+  </div>
+  <div class="grid9" id="grid"></div>
+  <div class="note micro">Preview only · posts appear newest first · Instagram shows the grid at 3:4</div>
+</section>
+<script>
+  const C = window.NORA_CAPTIONS;
+  document.getElementById('handle').textContent = C.handle;
+  document.getElementById('bio').textContent = C.bio;
+  const hl = ['nora', 'editions', 'case', 'sabae', 'waitlist'];
+  document.getElementById('hls').innerHTML = hl.map((k, i) => `<div class="hl-i"><div class="hl-c"><img src="../../output/D8/png/D8-highlights-0${i + 1}-${k}.png"></div><div class="t">${C.highlights[i]}</div></div>`).join('');
+  document.getElementById('grid').innerHTML = C.feed.slice().reverse().map((p) => `<div><img src="../../output/D8/png/D8-feed-${p.post}.png"></div>`).join('');
+</script>
+</body>
+</html>

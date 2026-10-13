@@ -1,0 +1,24 @@
+{
+  "note": "Placeholder captions in NORA's voice. Facts only, short, no banned words, no exclamation points, no hashtags. Edit here, then run npm run build.",
+  "feed": [
+    { "post": "01-monogram", "caption": "NORA. Sabae, Japan.", "alt": "The NORA monogram in white on black above a fine line and the words Sabae, Japan." },
+    { "post": "02-origin", "caption": "Made entirely in Sabae, Japan.", "alt": "The words Sabae, Japan in large serif type on black, with Fukui Prefecture and coordinates below a fine line.", "check": "Coordinates 35.9° N, 136.2° E: confirm before posting." },
+    { "post": "03-macro", "caption": "Acetate. Up close.", "alt": "A black-and-white macro photograph of polished acetate.", "check": "Sample image from the amber macro photo. Replace with final photography." },
+    { "post": "04-numeral", "caption": "Each pair is hand-engraved and numbered. 333 per style.", "alt": "N° — over /333 in serif type on black. Label: Blake, black and black." },
+    { "post": "05-product", "caption": "Blake. Black frame, black lens. $1,111.", "alt": "[OPEN: describe the final product photo]", "check": "Needs the product photo." },
+    { "post": "06-price", "caption": "One price. $1,111.", "alt": "$1,111 in large serif type on black. Labels: one price, 333 pieces each." },
+    { "post": "07-campaign", "caption": "[OPEN: written once the photo exists]", "alt": "[OPEN: describe the campaign photo]", "check": "Needs the campaign photo." },
+    { "post": "08-styles", "caption": "Blake. Sunny. Bella. 333 of each.", "alt": "The names Blake, Sunny and Bella stacked in serif type on black." },
+    { "post": "09-waitlist", "caption": "The waitlist is open. ohitsnora.com", "alt": "The NORA monogram above a password field. Labels: waitlist open, ohitsnora.com." }
+  ],
+  "stories": [
+    { "story": "numeral", "text": "Sunny. N° —/333." },
+    { "story": "macro", "text": "Acetate · detail" },
+    { "story": "product", "text": "Bella. All metal, silver, gradient lens. $1,111." },
+    { "story": "origin", "text": "Sabae, Japan. Every frame. Every step." },
+    { "story": "waitlist", "text": "Waitlist open. Link sticker to ohitsnora.com." }
+  ],
+  "highlights": ["NORA", "333", "Case", "Sabae", "Waitlist"],
+  "bio": "Sabae, Japan. 333 pieces.\nohitsnora.com",
+  "handle": "[OPEN: Instagram handle]"
+}

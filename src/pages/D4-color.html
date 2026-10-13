@@ -46,7 +46,7 @@
 
 <!-- 02 Violet -->
 <section class="page">
-  <div class="head"><div><div class="label">NORA Violet</div><h2>A screen color. Print needs a decision.</h2></div><span class="open">OPEN: electric or royal</span></div>
+  <div class="head"><div><div class="label">NORA Violet</div><h2>Electric on screen. Royal A in print.</h2></div><span class="open">Decided: electric on screen · Royal A in print</span></div>
   <div class="grid vi" id="vi"></div>
   <div class="warn" style="margin-top:44px">
     <p style="font-size:18px"><b style="font-weight:500">Print warning.</b> <span class="ash">#9000FF is outside what four-color (CMYK) printing can reproduce. Printed in CMYK, it goes flat and muddy. The second swatch above simulates this. For print, use a Pantone spot ink and approve it against a physical Pantone Formula Guide and a printed proof. The Pantone numbers here are nearest estimates and are not confirmed.</span></p>
@@ -103,9 +103,9 @@
 
   // Approximate look of #9000FF printed in CMYK (simulation only).
   const vi = [
-    ['violet', 'Electric · screen', 'Sampled from the swatch. Websites, Instagram, screens.', '#6E43A6'],
-    ['violet-royal-a', 'Royal A · print alternate', 'Deeper. Holds its color in print.', null],
-    ['violet-royal-b', 'Royal B · print alternate', 'Deepest. Closest to an ink on leather or card.', null],
+    ['violet', 'Electric · screen violet', 'Sampled from the swatch. Websites, Instagram, screens. Never printed.', '#6E43A6'],
+    ['violet-royal-a', 'Royal A · print violet', 'Selected for print. Holds its color on paper and card.', null],
+    ['violet-royal-b', 'Royal B · not selected', 'Deepest. Kept for reference.', null],
   ];
   document.getElementById('vi').innerHTML = vi.map(([k, name, note, sim]) => {
     const c = C[k];

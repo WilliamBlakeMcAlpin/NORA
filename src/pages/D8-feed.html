@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nora-page" content="1080x1350">
+<meta name="nora-output" content="D8">
+<title>NORA Instagram Feed</title>
+<!--
+  NORA Instagram feed templates, 1080 x 1350 px.
+  To edit: change the text inside a post, then run `node scripts/export.mjs D8`.
+  Rules: no banned words, no exclamation points, labels never under 26px,
+  one violet moment at most (used here only on the waitlist post).
+  Posts are numbered in posting order. Captions: D8-captions.html.
+  Keep key content inside the central 1012px: the profile grid crops posts to 3:4.
+-->
+<link rel="stylesheet" href="_ig.css">
+</head>
+<body>
+
+<!-- 01 · Monogram -->
+<section class="page post" data-name="monogram">
+  <img class="abs" src="../assets/logo/monogram-white.svg" style="left:50%;top:430px;height:330px;transform:translateX(-50%)">
+  <div class="hl"></div>
+  <div class="abs center-x ig-label" style="top:880px">Sabae, Japan</div>
+</section>
+
+<!-- 02 · Sabae origin -->
+<section class="page post" data-name="origin">
+  <div class="abs ig-display" style="left:80px;bottom:calc(1350px - 834px + 40px)">Sabae,<br>Japan.</div>
+  <div class="hl"></div>
+  <div class="abs ig-label" style="left:80px;top:880px">Fukui Prefecture</div>
+  <div class="abs ig-label" style="left:80px;top:930px">35.9° N · 136.2° E</div>
+  <img class="abs" src="../assets/logo/monogram-white.svg" style="right:80px;bottom:80px;height:64px">
+</section>
+
+<!-- 03 · Macro -->
+<section class="page post" data-name="macro">
+  <img class="bleed" src="../assets/images/macro-acetate-bw-feed.jpg">
+  <div class="shade"></div>
+  <div class="abs ig-label w" style="left:80px;bottom:80px">Acetate · detail</div>
+  <div class="abs ig-label" style="right:80px;bottom:80px;font-size:22px;letter-spacing:.14em">[Sample image · replace]</div>
+</section>
+
+<!-- 04 · Numeral teaser -->
+<section class="page post" data-name="numeral">
+  <div class="abs ig-label" style="left:80px;top:80px">Blake · Black / Black</div>
+  <div class="abs center-x" style="top:360px;font:300 260px/1 var(--font-editorial);letter-spacing:-0.02em">N° —</div>
+  <div class="abs center-x" style="top:650px;font:300 88px/1 var(--font-editorial);color:var(--nora-ash)">/333</div>
+  <div class="hl"></div>
+  <div class="abs ig-label" style="left:80px;top:880px">Numbered by hand</div>
+</section>
+
+<!-- 05 · Product -->
+<section class="page post" data-name="product">
+  <div class="ph" style="left:80px;right:80px;top:180px;height:560px">
+    <img src="../assets/placeholders/frame-front.svg" style="width:560px">
+    <div>[Placeholder: product photo · B&amp;W · object on black]</div>
+  </div>
+  <div class="hl"></div>
+  <div class="abs ig-line" style="left:80px;top:870px">Blake</div>
+  <div class="abs ig-label" style="left:80px;top:944px">Black frame · Black lens</div>
+  <div class="abs ig-label" style="right:80px;top:944px">$1,111</div>
+</section>
+
+<!-- 06 · Price -->
+<section class="page post" data-name="price">
+  <div class="abs ig-display" style="left:80px;bottom:calc(1350px - 834px + 40px)">$1,111</div>
+  <div class="hl"></div>
+  <div class="abs ig-label" style="left:80px;top:880px">One price</div>
+  <div class="abs ig-label" style="right:80px;top:880px">333 pieces each</div>
+</section>
+
+<!-- 07 · Campaign photo -->
+<section class="page post" data-name="campaign">
+  <div class="ph" style="inset:0;border:none;background:radial-gradient(ellipse at 72% 30%, #1c1915 0%, #0C0B0A 55%)">
+    <div style="max-width:720px">[Placeholder: campaign photo]<br><span style="font-size:20px;color:#67625B">Low light · one warm practical source · candid · faces turned away</span></div>
+  </div>
+  <div class="abs ig-label w" style="left:80px;bottom:80px">Sabae, Japan</div>
+</section>
+
+<!-- 08 · Three styles -->
+<section class="page post" data-name="styles">
+  <div class="abs ig-head" style="left:80px;bottom:calc(1350px - 834px + 40px)">Blake.<br>Sunny.<br>Bella.</div>
+  <div class="hl"></div>
+  <div class="abs ig-label" style="left:80px;top:880px">Three styles · 333 of each</div>
+  <div class="abs ig-label" style="left:80px;top:930px">2027</div>
+</section>
+
+<!-- 09 · Waitlist / password gate -->
+<section class="page post" data-name="waitlist">
+  <img class="abs" src="../assets/logo/monogram-white.svg" style="left:50%;top:200px;height:120px;transform:translateX(-50%)">
+  <div class="abs" style="left:240px;right:240px;top:600px;height:1px;background:var(--nora-ash)"></div>
+  <div class="abs center-x" style="top:520px;font:300 60px/1 var(--font-editorial);letter-spacing:.5em;color:var(--nora-ash)">••••••<span style="display:inline-block;width:3px;height:60px;background:var(--nora-violet);vertical-align:-6px;margin-left:-0.3em"></span></div>
+  <div class="hl"></div>
+  <div class="abs center-x ig-label w" style="top:880px">Waitlist open</div>
+  <div class="abs center-x ig-label" style="top:930px">ohitsnora.com</div>
+</section>
+
+</body>
+</html>
