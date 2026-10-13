@@ -7,9 +7,10 @@
     "tokens": "node scripts/build-tokens.mjs",
     "logo": "python3 scripts/build-logo.py && node scripts/check-trace.mjs",
     "images": "python3 scripts/build-images.py",
-    "captions": "node scripts/build-captions.mjs",
+    "content": "node scripts/build-content.mjs",
+    "book": "node scripts/build-book.mjs",
     "export": "node scripts/export.mjs",
-    "build": "npm run tokens && npm run logo && npm run images && npm run captions && npm run export"
+    "build": "npm run tokens && npm run logo && npm run images && npm run content && npm run book && npm run export"
   },
   "devDependencies": {
     "playwright": "1.56.1"

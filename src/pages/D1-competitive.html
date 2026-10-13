@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nora-page" content="1600x1000">
+<meta name="nora-output" content="D1">
+<title>NORA Competitive Analysis</title>
+<link rel="stylesheet" href="_base.css">
+<script src="../tokens/tokens.js"></script>
+<script src="../content/competitive.js"></script>
+<style>
+  .cmp td, .cmp th { font-size: 14px; line-height: 1.4; padding: 10px 18px 10px 0; }
+  .cmp th { font-size: 10px; }
+  .cmp td:first-child { font-size: 17px; white-space: nowrap; width: 170px; }
+  .cmp tr.nora td { color: var(--nora-white); border-top: 1px solid var(--nora-ash); }
+  .cmp .u { color: #67625B; }
+  .cmp .tag { font: 400 9px/1 var(--font-functional); letter-spacing: .14em; text-transform: uppercase; color: var(--nora-ash); }
+  .map { position: relative; width: 860px; height: 760px; border: 1px solid var(--nora-rule); }
+  .map .ax { position:absolute; background: var(--nora-rule); }
+  .map .dot { position:absolute; transform: translate(-50%, -50%); display:flex; align-items:center; gap:10px; white-space:nowrap; }
+  .map .dot i { display:block; width:9px; height:9px; border-radius:50%; background: var(--nora-ash); }
+  .map .dot span { font-size: 17px; color: var(--nora-ash); }
+  .map .dot.nora i { background: var(--nora-violet); width: 12px; height: 12px; }
+  .map .dot.nora span { color: var(--nora-white); font-size: 22px; }
+  .map .dot.jmm span { color: var(--nora-white); }
+  .map .lab { position:absolute; }
+  .ot { display:grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+  .ot ol { list-style: none; counter-reset: o; }
+  .ot li { counter-increment: o; padding: 22px 0; border-bottom: 1px solid var(--nora-rule); display:grid; grid-template-columns: 48px 1fr; }
+  .ot li::before { content: counter(o, decimal-leading-zero); font: 400 12px/2.2 var(--font-functional); letter-spacing:.2em; color: var(--nora-ash); }
+  .ot h3 { font-size: 24px; margin-bottom: 8px; }
+  .ot p { font-size: 16px; color: var(--nora-ash); }
+  .src { columns: 2; column-gap: 64px; font-size: 13px; line-height: 1.5; }
+  .src div { break-inside: avoid; padding: 6px 0; border-bottom: 1px solid var(--nora-rule); }
+  .src a { color: var(--nora-ash); text-decoration: none; word-break: break-all; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<!-- 01 Cover -->
+<section class="page">
+  <div style="position:absolute;left:112px;top:340px">
+    <div class="label">D1 · Competitive analysis</div>
+    <h1 style="margin-top:20px">Nine brands. One empty corner.</h1>
+    <p class="lede ash" style="margin-top:32px;max-width:900px" id="method"></p>
+    <p class="micro" style="margin-top:28px">Checked <span id="checked"></span>. Prices change: recheck before quoting any figure in public.</p>
+  </div>
+  <div class="folio"><span>NORA · D1 Competitive analysis</span><span>01</span></div>
+</section>
+
+<!-- 02 Table A -->
+<section class="page">
+  <div class="head" style="margin-bottom:28px"><div><div class="label">Comparison · 1 of 2</div><h2>Price, origin, numbering.</h2></div><span class="micro">Gray = unverified</span></div>
+  <table class="cmp" id="t1"></table>
+  <div class="folio"><span>NORA · D1 Competitive analysis</span><span>02</span></div>
+</section>
+
+<!-- 03 Table B -->
+<section class="page">
+  <div class="head" style="margin-bottom:28px"><div><div class="label">Comparison · 2 of 2</div><h2>Logo, packaging, voice, site.</h2></div><span class="micro">Gray = unverified</span></div>
+  <table class="cmp" id="t2"></table>
+  <div class="folio"><span>NORA · D1 Competitive analysis</span><span>03</span></div>
+</section>
+
+<!-- 04 Map -->
+<section class="page">
+  <div style="display:grid;grid-template-columns:860px 1fr;gap:72px">
+    <div class="map" id="map">
+      <div class="ax" style="left:50%;top:0;bottom:0;width:1px"></div>
+      <div class="ax" style="top:50%;left:0;right:0;height:1px"></div>
+      <div class="lab micro" style="left:14px;top:50%;transform:translateY(-140%)">Quiet</div>
+      <div class="lab micro" style="right:14px;top:50%;transform:translateY(-140%)">Loud</div>
+      <div class="lab micro" style="left:50%;top:12px;transform:translateX(12px)">Cult</div>
+      <div class="lab micro" style="left:50%;bottom:12px;transform:translateX(12px)">Accessible</div>
+    </div>
+    <div>
+      <div class="label">Positioning map</div>
+      <h2 style="margin-top:14px">NORA takes the quiet, cult corner.</h2>
+      <p class="ash" style="margin-top:24px;font-size:18px">Loud means the logo or hardware does the talking. Cult means scarcity, numbering and a following the brand does not chase.</p>
+      <p class="ash" style="margin-top:16px;font-size:18px">JMM is the nearest neighbor, but its collaborations and storytelling pull it toward the center. Maison Margiela is quiet but sells broadly. Nobody else sits where NORA plans to: no exterior mark, a fixed number and one price.</p>
+      <p class="micro" style="margin-top:28px">Positions are NORA's judgment, not measured data.</p>
+    </div>
+  </div>
+  <div class="folio"><span>NORA · D1 Competitive analysis</span><span>04</span></div>
+</section>
+
+<!-- 05 Openings and traps -->
+<section class="page">
+  <div class="ot">
+    <div><div class="label">Three openings NORA can own</div><ol id="op" style="margin-top:24px"></ol></div>
+    <div><div class="label">Three traps to avoid</div><ol id="tr" style="margin-top:24px"></ol></div>
+  </div>
+  <div class="folio"><span>NORA · D1 Competitive analysis</span><span>05</span></div>
+</section>
+
+<!-- 06 Sources -->
+<section class="page">
+  <div class="head" style="margin-bottom:28px"><div><div class="label">Sources</div><h2>Every claim, linked.</h2></div><span class="micro" id="checked2"></span></div>
+  <div class="src" id="src"></div>
+  <p class="micro" style="margin-top:20px">Not used: the tier chart in refs/competitive (not supplied, and for direction only).</p>
+  <div class="folio"><span>NORA · D1 Competitive analysis</span><span>06</span></div>
+</section>
+
+<script>
+  const D = window.NORA_COMPETITIVE;
+  document.getElementById('method').textContent = D.method;
+  document.getElementById('checked').textContent = D.checked;
+  document.getElementById('checked2').textContent = 'All checked ' + D.checked;
+  const cell = (v) => {
+    const u = /^unverified|none found/i.test(v) || /unverified\)?$/i.test(v);
+    const html = v.replace(/\[([a-z ]+?)((?: s\d+,?)+)\]/gi, (m, t, ids) => ` <span class="tag">${t.trim()} ${ids.trim().replace(/s/g, '')}</span>`);
+    return `<td class="${u ? 'u' : ''}">${html}</td>`;
+  };
+  const table = (id, fields) => {
+    const t = document.getElementById(id);
+    t.innerHTML = `<tr><th>Brand</th>${fields.map((f) => `<th>${D.fieldNames[f]}</th>`).join('')}</tr>` +
+      D.brands.map((b) => `<tr><td>${b.name}</td>${fields.map((f) => cell(b[f])).join('')}</tr>`).join('') +
+      `<tr class="nora"><td>NORA</td>${fields.map((f) => `<td>${D.nora[f]}</td>`).join('')}</tr>`;
+  };
+  table('t1', ['price', 'origin', 'edition']);
+  table('t2', ['logo', 'packaging', 'voice', 'site']);
+  const map = document.getElementById('map');
+  for (const b of [...D.brands, { ...D.nora, nora: true }]) {
+    const [x, y] = b.map;
+    const d = document.createElement('div');
+    d.className = 'dot' + (b.nora ? ' nora' : '') + (b.primary ? ' jmm' : '');
+    d.style.left = (x * 100) + '%'; d.style.top = ((1 - y) * 100) + '%';
+    d.innerHTML = `<i></i><span>${b.name}</span>`;
+    map.appendChild(d);
+  }
+  const li = (a) => a.map((o) => `<li><div><h3>${o.t}</h3><p>${o.d}</p></div></li>`).join('');
+  document.getElementById('op').innerHTML = li(D.openings);
+  document.getElementById('tr').innerHTML = li(D.traps);
+  document.getElementById('src').innerHTML = Object.entries(D.sources).map(([k, s]) =>
+    `<div><span class="num">${k.slice(1)}</span> · ${s.title} <span class="tag">${s.type}</span><br><a href="${s.url}">${s.url}</a></div>`).join('');
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NORA book chapters (source)</title>
+<!-- Chapters written for the guidelines book. Not exported on its own:
+     scripts/build-book.mjs pulls these sections into D7-guidelines.html. -->
+<link rel="stylesheet" href="_base.css">
+<style>
+  .facts { list-style:none; }
+  .facts li { display:grid; grid-template-columns: 240px 1fr; padding: 18px 0; border-bottom: 1px solid var(--nora-rule); }
+  .facts li span:first-child { font: 400 11px/2 var(--font-functional); letter-spacing: var(--tracking-caps-md); text-transform: uppercase; color: var(--nora-ash); }
+  .facts li span:last-child { font-size: 21px; }
+  .vx { display:grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+  .vx .col h3 { font-size: 13px; font-family: var(--font-functional); letter-spacing: var(--tracking-caps-md); text-transform: uppercase; color: var(--nora-ash); font-weight:400; margin-bottom: 18px; }
+  .vx .ex { padding: 18px 0; border-bottom: 1px solid var(--nora-rule); font-size: 24px; }
+  .vx .ex.no { color: #67625B; text-decoration: line-through; text-decoration-thickness: 1px; }
+  .bw { display:grid; grid-template-columns: repeat(3, 1fr); row-gap: 40px; column-gap: 40px; margin-top: 40px; }
+  .bw div { font: 300 54px/1 var(--font-editorial); color: #67625B; text-decoration: line-through; text-decoration-thickness: 1px; }
+  .dd2 { display:grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .dd2 .c { height: 300px; outline: 1px solid var(--nora-rule); position: relative; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .dd2 .t { position:absolute; left:18px; top:14px; }
+  .dd2 .k { position:absolute; left:18px; bottom:14px; }
+  .toc { columns: 2; column-gap: 96px; margin-top: 48px; }
+  .toc div { display:flex; justify-content:space-between; padding: 14px 0; border-bottom: 1px solid var(--nora-rule); font-size: 22px; break-inside: avoid; }
+  .toc div span:last-child { font: 400 12px/2 var(--font-functional); letter-spacing:.2em; color: var(--nora-ash); }
+  .oi td { font-size: 16px; }
+</style>
+</head>
+<body>
+
+<section class="page" data-book="cover">
+  <div style="height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:64px">
+    <img src="../assets/logo/lockup-no-descriptor-white.svg" style="height:360px">
+    <div class="label">Brand guidelines · version 0.3 · October 2026</div>
+  </div>
+</section>
+
+<section class="page" data-book="contents">
+  <div class="label">Contents</div>
+  <h2 style="margin-top:14px">Less is more. When in doubt, remove.</h2>
+  <div class="toc" id="toc"></div>
+  <div class="folio"><span></span><span></span></div>
+</section>
+
+<section class="page" data-book="positioning">
+  <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:96px">
+    <div>
+      <div class="label">01 · Positioning</div>
+      <h1 style="margin-top:18px">Anti-brand.<br>Incidentally cool.</h1>
+      <p class="lede ash" style="margin-top:32px">NORA looks like it isn't trying to sell anything. The logo is an authentication mark, found inside the temple by the person who owns the pair. Restraint is the brand.</p>
+    </div>
+    <ul class="facts">
+      <li><span>Made in</span><span>Sabae, Fukui, Japan. 100%. No offshore or hybrid production.</span></li>
+      <li><span>Edition</span><span>333 per colorway per style. Hand-engraved and numbered, X/333.</span></li>
+      <li><span>Price</span><span>$1,111. One price.</span></li>
+      <li><span>Styles</span><span>Blake, Sunny, Bella.</span></li>
+      <li><span>Lenses</span><span>Nylon (polyamide).</span></li>
+      <li><span>Sold</span><span>Direct only, at ohitsnora.com. No wholesale.</span></li>
+      <li><span>For</span><span>Everyone. Unisex from launch.</span></li>
+      <li><span>Company</span><span>Ohitsnora Corporation (Texas), doing business as NORA Eyewear.</span></li>
+    </ul>
+  </div>
+  <div class="folio"><span></span><span></span></div>
+</section>
+
+<section class="page" data-book="voice">
+  <div class="head" style="margin-bottom:40px"><div><div class="label">02 · Voice</div><h2>Near-silent. Facts, not adjectives.</h2></div></div>
+  <div class="vx">
+    <div class="col"><h3>Write like this</h3>
+      <div class="ex">Sabae, Japan. 333 pieces. N° 001/333.</div>
+      <div class="ex">Black frame. Black lens.</div>
+      <div class="ex">One price. $1,111.</div>
+      <div class="ex">The waitlist is open.</div>
+      <div class="ex">Hand-engraved inside the temple.</div>
+    </div>
+    <div class="col"><h3>Never like this</h3>
+      <div class="ex no">Elevate your look with our iconic shades!</div>
+      <div class="ex no">We're obsessed with craftsmanship.</div>
+      <div class="ex no">Only a few left. Don't miss out!</div>
+      <div class="ex no">The ultimate statement piece.</div>
+      <div class="ex no">For the modern gentleman.</div>
+    </div>
+  </div>
+  <p class="micro" style="margin-top:32px">Short. No exclamation points. No first-person hype. No gendered copy. No invented press, quotes, stockists or numbers.</p>
+  <div class="folio"><span></span><span></span></div>
+</section>
+
+<section class="page" data-book="banned">
+  <div class="label">03 · Banned words</div>
+  <h2 style="margin-top:14px">Never in NORA copy.</h2>
+  <div class="bw">
+    <div>luxury</div><div>exclusive</div><div>elevate</div>
+    <div>premium</div><div>curated</div><div>iconic</div>
+    <div>timeless</div><div>must-have</div><div>game-changer</div>
+  </div>
+  <p class="micro" style="margin-top:56px">If a sentence needs one of these words, delete the sentence. The original lockup's "LUXURY EYEWEAR" is kept on file only.</p>
+  <div class="folio"><span></span><span></span></div>
+</section>
+
+<section class="page" data-book="less1">
+  <div class="head" style="margin-bottom:32px"><div><div class="label">04 · Less is more</div><h2>Remove until it breaks. Then add one thing back.</h2></div></div>
+  <div class="dd2">
+    <div class="c"><span class="t micro">Do · one mark</span><img src="../assets/logo/monogram-white.svg" style="height:110px"><span class="k micro">The case: a blind deboss of the monogram. Nothing else.</span></div>
+    <div class="c"><span class="t micro">Don't · pattern the logo</span>
+      <div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(8,1fr);opacity:.5;padding:18px 18px 48px">
+        <img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto">
+        <img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto">
+        <img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto"><img src="../assets/logo/monogram-white.svg" style="height:46px;margin:auto">
+      </div><span class="k micro">Monogram prints, all-over logos, logo hardware.</span></div>
+    <div class="c"><span class="t micro">Do · one line</span><div style="font:300 44px/1 var(--font-editorial)">Sabae, Japan.</div><span class="k micro">One fact per layout.</span></div>
+    <div class="c"><span class="t micro">Don't · explain</span><div style="font:400 18px/1.5 var(--font-editorial);color:#67625B;max-width:520px;text-align:center">Handcrafted with passion by master artisans using only the finest materials, each pair is a testament to our uncompromising commitment to quality and style.</div><span class="k micro">Adjectives, claims, paragraphs.</span></div>
+  </div>
+  <div class="folio"><span></span><span></span></div>
+</section>
+
+<section class="page" data-book="less2">
+  <div class="head" style="margin-bottom:32px"><div><div class="label">04 · Less is more</div><h2>One accent. One line. One mark.</h2></div></div>
+  <div class="dd2">
+    <div class="c"><span class="t micro">Do · one violet moment</span><div style="font:300 64px/1 var(--font-editorial)">N° —<span style="color:var(--nora-violet)">/</span>333</div><span class="k micro">Violet is a spark, never a surface.</span></div>
+    <div class="c"><span class="t micro">Don't · violet text or violet grounds</span><div style="font:400 20px/1.5 var(--font-editorial);color:var(--nora-violet);max-width:440px;text-align:center">Body copy in violet on black is hard to read. At 3.4:1 it fails the contrast test for text.</div><span class="k micro">Never as body text, never as a background.</span></div>
+    <div class="c"><span class="t micro">Do · blank exterior</span>
+      <svg width="420" height="120" viewBox="0 0 420 120" fill="none" stroke="#8C8780" stroke-width="1.2"><path d="M10 40 H350 Q395 40 405 76 L410 106"/><path d="M10 58 H346 Q380 58 388 84 L392 110"/></svg>
+      <span class="k micro">The outside of the frame carries nothing.</span></div>
+    <div class="c"><span class="t micro">Don't · more than one line</span>
+      <div style="position:absolute;inset:40px 60px 60px">
+        <div style="position:absolute;left:0;right:0;top:20%;height:1px;background:#4E4D4B"></div><div style="position:absolute;left:0;right:0;top:40%;height:3px;background:#4E4D4B"></div><div style="position:absolute;left:0;right:0;top:62%;height:1px;background:#4E4D4B"></div><div style="position:absolute;left:30%;top:0;bottom:0;width:1px;background:#4E4D4B"></div><div style="position:absolute;inset:0;outline:1px solid #4E4D4B"></div>
+      </div><span class="k micro">Boxes, double rules, dividers everywhere.</span></div>
+  </div>
+  <div class="folio"><span></span><span></span></div>
+</section>
+
+<section class="page" data-book="open">
+  <div class="head" style="margin-bottom:28px"><div><div class="label">Open items</div><h2>Still to decide. Never filled in by guesswork.</h2></div></div>
+  <table class="oi">
+    <tr><th>Item</th><th>Status</th><th>Waiting on</th></tr>
+    <tr><td>Designer's vector master of the logo</td><td class="ash">Traced version in use</td><td>Blake / original designer</td></tr>
+    <tr><td>Wordmark typeface and its license</td><td class="ash">Not identified</td><td>Original designer</td></tr>
+    <tr><td>Sunny lens color: black or blue</td><td class="ash">Open</td><td>Blake</td></tr>
+    <tr><td>Factory model to style mapping</td><td class="ash">Open</td><td>Blake / Sabaeframe</td></tr>
+    <tr><td>Engraving dimensions; logo and number on one temple or two</td><td class="ash">Open</td><td>Felix at Sabaeframe</td></tr>
+    <tr><td>Case leather origin; deboss placement</td><td class="ash">Open</td><td>Blake / Fedon</td></tr>
+    <tr><td>Box: plain lift-off lid or resin window</td><td class="ash">Open</td><td>Blake</td></tr>
+    <tr><td>Pantone confirmation for Royal A</td><td class="ash">Estimate only</td><td>Physical Pantone book</td></tr>
+    <tr><td>Product and campaign photography</td><td class="ash">None yet</td><td>Shoot, per D6 shot list</td></tr>
+    <tr><td>Instagram handle; Blake's phone number</td><td class="ash">Open</td><td>Blake</td></tr>
+  </table>
+  <div class="folio"><span></span><span></span></div>
+</section>
+
+</body>
+</html>
